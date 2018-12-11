@@ -931,6 +931,8 @@ input,a{outline:none;}
                }
                a:hover img{
                  box-shadow: 0 0 5px #414040;
+                 margin-top:-3px;
+                 transition: all 0.5s;
                }
            }
         }
@@ -941,8 +943,9 @@ input,a{outline:none;}
                 width: 1190px;
                 height: 90px;
                 margin: auto;
-                padding: 10px 20px;
+                padding: 10px 0;
                 overflow: hidden;
+                background: #fff;
                 a{
                  display: block;
           
@@ -953,7 +956,7 @@ input,a{outline:none;}
                     float: left;
                     width: 237px;
                      height: 90px;
-                    border-right: 1px solid #8b8b8b;
+               
                     position: relative;
                     img{
                         display: block;
@@ -963,10 +966,25 @@ input,a{outline:none;}
                     }
                     dd{
                         position: absolute;
-                        width: 118px;
+                        width: 135px;
                          height: 60px;
-                        top: 0px;
-                       left: 100px;
+                         top: 20px;
+                         left: 100px;
+                         text-align: center;
+                         border-right: 1px solid #ddd;
+                      
+                         strong{
+                             display:block;
+                             font-size: 16px;
+                             line-height: 30px;
+                             
+                         }
+                         p{
+                         
+                             font-size: 14px;
+                             line-height: 20px;
+                         }
+
                     }
                  }
                 }
@@ -974,6 +992,23 @@ input,a{outline:none;}
             
 
         }
+.content{
+    background: #F2F2F2;
+    .main{
+        width: 1190px;
+        height:508px;
+        margin: 0 auto;
+    .ranking{
+        width:470px;
+        height:100%;
+        background: red;
+    }
+    .selection{
+        width:470px;
+        height:100%;
+    }
+    }
+}
     
      
   

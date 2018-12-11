@@ -690,7 +690,9 @@ input, a {
       width: 230px;
       height: 150px; }
     .act-big ul a:hover img {
-      box-shadow: 0 0 5px #414040; }
+      box-shadow: 0 0 5px #414040;
+      margin-top: -3px;
+      transition: all 0.5s; }
 
 .act-box {
   background: #F2F2F2; }
@@ -698,8 +700,9 @@ input, a {
     width: 1190px;
     height: 90px;
     margin: auto;
-    padding: 10px 20px;
-    overflow: hidden; }
+    padding: 10px 0;
+    overflow: hidden;
+    background: #fff; }
     .act-box .act-list a {
       display: block; }
       .act-box .act-list a dl {
@@ -707,7 +710,6 @@ input, a {
         float: left;
         width: 237px;
         height: 90px;
-        border-right: 1px solid #8b8b8b;
         position: relative; }
         .act-box .act-list a dl img {
           display: block;
@@ -716,7 +718,30 @@ input, a {
           margin: 15px 20px; }
         .act-box .act-list a dl dd {
           position: absolute;
-          width: 118px;
+          width: 135px;
           height: 60px;
-          top: 0px;
-          left: 100px; }
+          top: 20px;
+          left: 100px;
+          text-align: center;
+          border-right: 1px solid #ddd; }
+          .act-box .act-list a dl dd strong {
+            display: block;
+            font-size: 16px;
+            line-height: 30px; }
+          .act-box .act-list a dl dd p {
+            font-size: 14px;
+            line-height: 20px; }
+
+.content {
+  background: #F2F2F2; }
+  .content .main {
+    width: 1190px;
+    height: 508px;
+    margin: 0 auto; }
+    .content .main .ranking {
+      width: 470px;
+      height: 100%;
+      background: red; }
+    .content .main .selection {
+      width: 470px;
+      height: 100%; }
