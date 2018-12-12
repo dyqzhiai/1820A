@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑"; }
+
+input, a {
+  outline: none; }
+
+.header {
+  height: 80px;
+  padding: 20px  180px 0 180px; }
+  .header h1 {
+    font-size: 25px; }
+  .header img {
+    width: 140px;
+    height: 47px;
+    float: left; }
+  .header h2 {
+    float: left;
+    width: 134px;
+    height: 34px;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    font-size: 20px;
+    background: url(../images/67.png) 13px -34px no-repeat;
+    margin-left: 20px; }
+  .header h3 {
+    float: right;
+    line-height: 50px;
+    font-weight: bolder; }
+
+.bg {
+  background: url(../images/69.jpg);
+  margin-left: -300px;
+  text-shadow: 0 0 black;
+  height: 584px;
+  position: relative; }
+
+.foot-type {
+  background: #fff;
+  border-top: 1px solid #333; }
+  .foot-type .type-list {
+    width: 1190px;
+    height: 179px;
+    margin: 0 auto; }
+    .foot-type .type-list ul {
+      width: 1000px;
+      margin: 0 auto;
+      height: 20px;
+      line-height: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px; }
+      .foot-type .type-list ul a {
+        color: #222; }
+      .foot-type .type-list ul a:hover {
+        color: #00C0DC; }
+      .foot-type .type-list ul span {
+        color: #303030;
+        font-size: 12px; }
+    .foot-type .type-list p {
+      padding: 15px  0 0 0;
+      width: 500px;
+      height: 20px;
+      line-height: 20px;
+      margin: 0 auto;
+      font-size: 14px;
+      color: #727272; }
+    .foot-type .type-list .min-img {
+      width: 500px;
+      height: 35px;
+      margin: 20px auto; }
+      .foot-type .type-list .min-img img {
+        display: block;
+        width: 92px;
+        height: 35px;
+        margin-right: 5px;
+        float: left; }
