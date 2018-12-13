@@ -24,7 +24,7 @@ const proxy = require("http-proxy-middleware")
 // dev
 
 gulp.task("html",()=>{
-      return  gulp.src(["./src/pages/*.html","!./src/pages/mySecret.html"]).pipe(gulp.dest("./dist/pages")).pipe(connect.reload());
+      return  gulp.src(["./src/pages/*.html","./src/pages/*.json","!./src/pages/mySecret.html"]).pipe(gulp.dest("./dist/pages")).pipe(connect.reload());
 })
 
 gulp.task("js" , ()=>{

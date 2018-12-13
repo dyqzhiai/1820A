@@ -1,3 +1,101 @@
+// 通用的工具 ;
+// 通用的函数封装。
+function _(selector) {
+  var ele = document.querySelectorAll(selector);
+  if (ele.length == 0) return null;
+  return ele.length == 1 ? ele[0] : ele;
+}
+
+function _ajax(url) {
+  return new Promise(function (resolve, reject) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.send(null);
+
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        resolve(xhr.response);
+      }
+    };
+  });
+}
+
+function _jsonp(url, cb) {
+  return new Promise(function (resolve, reject) {
+    cb = cb ? cb : "callback";
+    var randomName = "cb" + Date.now();
+    var script = document.createElement("script");
+    url += (/\?/.test(url) ? "&" : "?") + `${cb}=${randomName}`;
+    script.src = url;
+    document.body.appendChild(script);
+
+    script.onload = function () {
+      this.remove();
+    };
+
+    window[randomName] = function (res) {
+      resolve(res);
+    };
+  });
+} // 兼容型伪数组转换成真数组;
+
+
+function _slice(args) {
+  return Array.prototype.slice.call(args);
+}
+
+function _removeClass(dom, className) {
+  return dom.className = dom.className.replace(className, "");
+}
+var oSmall = document.getElementById("small");
+var oBig = document.getElementById("big");
+var oFrame = document.getElementById("frame");
+var oBig_img = oBig.children[0];
+
+oSmall.onmouseover = function () {
+  oBig.style.display = "block";
+  oFrame.style.display = "block";
+};
+
+oSmall.onmouseout = function () {
+  oBig.style.display = "none";
+  oFrame.style.display = "none";
+};
+
+oSmall.onmousemove = function (event) {
+  var e = event || window.event;
+  var nLeft = e.offsetX - 50;
+  var nTop = e.offsetY - 50;
+
+  if (nLeft <= 0) {
+    nLeft = 0;
+  }
+
+  if (nTop <= 0) {
+    nTop = 0;
+  }
+
+  var maxLeft = oSmall.offsetWidth - oFrame.offsetWidth;
+
+  if (nLeft >= maxLeft) {
+    nLeft = maxLeft;
+  }
+
+  var maxTop = oSmall.offsetHeight - oFrame.offsetHeight;
+
+  if (nTop >= maxTop) {
+    nTop = maxTop;
+  }
+
+  oFrame.style.left = nLeft + "px";
+  oFrame.style.top = nTop + "px"; // 计算比例;
+
+  var propX = oBig.offsetWidth / oFrame.offsetWidth; // 根据比例算出位移值;
+
+  oBig_img.style.left = -nLeft * propX + "px";
+  var propY = oBig.offsetHeight / oFrame.offsetHeight;
+  oBig_img.style.top = -nTop * propY + "px";
+};
 var index = 0; // 选中所有的图片;
 
 var prve_index = 0; // 图片
@@ -82,5 +180,44 @@ $(".container").hover(function () {
   clearInterval(banner_timer);
 }, function () {
   banner_timer = setInterval('$("#right").trigger("click")', 5000);
+});
+var index = 1;
+var pageNum = 40;
+$.ajax({
+  type: "get",
+  url: "data.json",
+  async: true,
+  dataType: "json",
+  success: function (arr) {
+    var html = "";
+
+    for (var i = (index - 1) * pageNum; i < index * pageNum; i++) {
+      var pro = arr[i];
+
+      if (i < arr.length) {
+        html += ` <a href="#">
+                <div class="goods-box">
+                <div class="good-image">
+                 <img src="${pro.FileName}" alt="">
+           </div>
+            <div class="good-price">
+                <span>￥${pro.price_mobile}</span>
+                 <s>￥${pro.OriginalPrice}</s>
+            </div>
+           <div class="good-title">
+                 <p>${pro.Name}</p>   
+           </div>
+           
+           <div class="good-lenth">
+                 <div>起订:<span>${pro.LimitCount}</span>${pro.Unit}</div>    
+             </div>
+          
+          <div class="btn">即将开始</div>
+     </div></a>`;
+      }
+    }
+
+    $(".container-goodslist").html(html);
+  }
 });
 //# sourceMappingURL=all.js.map
