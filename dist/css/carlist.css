@@ -338,288 +338,70 @@ input, a {
       margin-right: 5px; }
       .main2 ul li a:hover {
         color: #00C0DC; }
-  .main2 #main1 {
-    height: 500px;
-    background: #fff;
-    margin-left: 75px;
-    border: 1px solid #EBEBEB;
-    position: relative; }
-    .main2 #main1 .profont {
-      position: absolute;
-      left: 0;
-      top: 430px;
-      margin-top: 15px;
-      line-height: 18px;
-      color: #919191; }
-      .main2 #main1 .profont p {
-        width: 204px;
-        height: 25px;
-        line-height: 25px;
-        font-size: 14px;
-        float: left;
-        margin-right: 10px; }
-        .main2 #main1 .profont p span {
-          display: block;
-          float: left;
-          width: 60px;
-          height: 25px;
-          margin-right: 5px;
-          line-height: 25px;
-          font-size: 14px; }
-          .main2 #main1 .profont p span i {
-            display: block;
-            width: 18px;
-            height: 18px;
-            margin-right: 5px;
-            margin-top: 5px;
-            background: url(../images/71.jpg) no-repeat; }
-          .main2 #main1 .profont p span .icon-f {
-            background-position: 0 2px;
-            float: left; }
-          .main2 #main1 .profont p span .icon-c {
-            background-position: 0 -19px;
-            float: left; }
-          .main2 #main1 .profont p span .icon-r {
-            background: url(../images/72.png) no-repeat;
-            float: left; }
-    .main2 #main1 .goods-info {
-      width: 520px;
-      height: 480px;
-      border: 1px solid #EBEBEB;
-      position: absolute;
-      left: 420px;
-      top: 20px;
-      margin-left: 20px; }
-      .main2 #main1 .goods-info h1 {
-        font-weight: bold;
-        font-size: 16px;
-        text-align: left;
-        padding-bottom: 5px;
-        color: #333333; }
-      .main2 #main1 .goods-info h2 {
-        font-size: 14px;
-        color: #ef373b;
-        line-height: 20px;
-        padding-bottom: 5px; }
-      .main2 #main1 .goods-info .pro_panel {
-        padding: 15px 0;
-        overflow: hidden;
-        margin: 10px 0 5px;
-        position: relative; }
-        .main2 #main1 .goods-info .pro_panel .pro_price {
-          float: left;
-          line-height: 25px; }
-          .main2 #main1 .goods-info .pro_panel .pro_price dl {
-            font-size: 12px; }
-            .main2 #main1 .goods-info .pro_panel .pro_price dl dt {
-              float: left;
-              margin-right: 10px; }
-              .main2 #main1 .goods-info .pro_panel .pro_price dl dt dd strong {
-                display: block;
-                float: left;
-                font-size: 14px; }
-              .main2 #main1 .goods-info .pro_panel .pro_price dl dt dd a {
-                color: #00C0DC;
-                float: left;
-                margin-left: 10px; }
-        .main2 #main1 .goods-info .pro_panel .amountfr {
-          float: right;
-          border-left: 1px #dedede solid;
-          padding: 0 15px 0 12px;
-          width: 50px;
-          line-height: 20px;
-          color: #919191;
-          margin-top: 4px;
-          font-size: 14px; }
-      .main2 #main1 .goods-info .pro-key {
-        height: 250px;
-        padding: 1px; }
-        .main2 #main1 .goods-info .pro-key dl {
-          height: 50px;
-          font-size: 12px;
-          margin-top: 10px;
-          margin-left: 50px; }
-          .main2 #main1 .goods-info .pro-key dl dt {
-            float: left;
-            line-height: 50px; }
-          .main2 #main1 .goods-info .pro-key dl dd {
-            width: 70px;
-            height: 30px;
-            float: left;
-            border: 2px solid #1cbfda;
-            margin-top: 14px;
-            margin-left: 5px;
-            position: relative; }
-            .main2 #main1 .goods-info .pro-key dl dd span {
-              text-align: center;
-              line-height: 30px;
-              display: block; }
-            .main2 #main1 .goods-info .pro-key dl dd i {
-              width: 10px;
-              height: 10px;
-              background: url(../images/71.jpg) no-repeat 0 -40px;
-              position: absolute;
-              right: 0px;
-              bottom: 0px;
-              display: block; }
-      .main2 #main1 .goods-info .num {
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        margin-top: -30px;
-        font-size: 16px; }
-        .main2 #main1 .goods-info .num span {
-          display: block;
-          border-radius: 3px;
-          width: 100px;
-          height: 40px;
-          line-height: 40px;
-          text-align: center;
-          margin-right: 50px;
-          float: left; }
-        .main2 #main1 .goods-info .num .one {
-          background: #EE3F40;
-          margin-left: 50px; }
-          .main2 #main1 .goods-info .num .one a {
-            color: #fff; }
-        .main2 #main1 .goods-info .num .two {
-          border: 1px solid #EE3F40; }
-          .main2 #main1 .goods-info .num .two a {
-            color: #EE3F40; }
-  .main2 #small {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    box-shadow: 0 0 5px #000; }
-  .main2 #small img {
-    width: 100%;
-    height: 100%; }
-  .main2 #mo {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 999; }
-  .main2 #frame {
-    width: 200px;
-    height: 200px;
-    box-shadow: 0 0 5px #000;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: none; }
-  .main2 #big {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    box-shadow: 0 0 5px #000;
-    overflow: hidden;
-    display: none;
-    z-index: 10; }
-  .main2 #big img {
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    left: 0;
-    top: 0; }
-  .main2 #small, .main2 #big {
-    float: left;
-    margin-top: 20px; }
-
-.banner {
-  width: 750px; }
-  .banner img {
-    display: block;
-    width: 750px;
-    height: 500px;
-    margin-left: 300px; }
-  .banner .frist {
-    margin-top: 200px; }
-
-.lang-img {
-  background: #F2F2F2;
-  height: 118px;
-  margin-top: 30px; }
-  .lang-img img {
-    width: 100%;
-    height: 100%; }
-
-.foot {
-  background: url(../images/60.png) bottom center no-repeat #222; }
-  .foot .foot-nav {
+  .main2 .list {
     width: 1190px;
-    height: 210px;
+    height: 150px;
     margin: 0 auto;
-    padding: 32px 0 53px 0; }
-    .foot .foot-nav dl {
-      float: left;
-      margin-right: 100px; }
-      .foot .foot-nav dl dt {
-        color: #fff;
-        font-size: 16px; }
-      .foot .foot-nav dl dd {
-        margin-top: 20px; }
-        .foot .foot-nav dl dd span {
-          display: block;
-          line-height: 25px;
-          font-size: 14px; }
-          .foot .foot-nav dl dd span a {
-            color: #a0a0a0; }
-        .foot .foot-nav dl dd a:hover {
-          color: #fff; }
-    .foot .foot-nav .sao {
-      width: 110px;
-      height: 154px;
-      float: left;
-      margin-right: 75px; }
-      .foot .foot-nav .sao p {
-        width: 110px;
-        height: 20px;
-        line-height: 20px;
-        text-align: center;
-        color: #fff; }
-      .foot .foot-nav .sao img {
-        display: block;
-        width: 110px;
-        height: 110px;
-        margin-top: 30px; }
+    border: 1px solid #ddd;
+    font-size: 14px; }
+    .main2 .list dl {
+      line-height: 30px;
+      border-top: 1px dotted #e6e6e6; }
+      .main2 .list dl dt {
+        margin-left: 15px;
+        width: 70px;
+        text-align: start;
+        float: left;
+        margin-right: 20px; }
+      .main2 .list dl dd a {
+        color: #1cbfda; }
 
-.foot-type {
-  background: #222;
-  border-top: 1px solid #333; }
-  .foot-type .type-list {
-    width: 1190px;
-    height: 179px;
-    margin: 0 auto; }
-    .foot-type .type-list ul {
-      width: 1000px;
-      margin: 0 auto;
-      height: 20px;
-      line-height: 20px;
-      display: flex;
-      justify-content: space-between;
-      padding-top: 30px; }
-      .foot-type .type-list ul a {
-        color: #fff; }
-      .foot-type .type-list ul a:hover {
-        color: #00C0DC; }
-      .foot-type .type-list ul span {
-        color: #303030;
-        font-size: 12px; }
-    .foot-type .type-list p {
-      padding: 15px  0 0 0;
-      width: 500px;
-      height: 20px;
-      line-height: 20px;
-      margin: 0 auto;
+.container-goodslist {
+  width: 1190px;
+  margin: 20px auto;
+  position: relative; }
+  .container-goodslist .goods-box {
+    width: 220px;
+    height: 350px;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd; }
+    .container-goodslist .goods-box .good-image {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto; }
+      .container-goodslist .goods-box .good-image img {
+        width: 100%;
+        height: 100%; }
+    .container-goodslist .goods-box .good-title {
+      margin: 0 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed #cfcfcf;
       font-size: 14px;
-      color: #727272; }
-    .foot-type .type-list .min-img {
-      width: 500px;
-      height: 35px;
-      margin: 20px auto; }
-      .foot-type .type-list .min-img img {
-        display: block;
-        width: 92px;
-        height: 35px;
-        margin-right: 5px;
-        float: left; }
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      height: 22px; }
+    .container-goodslist .goods-box .good-price {
+      width: 170px;
+      margin: 10px;
+      line-height: 25px; }
+      .container-goodslist .goods-box .good-price span {
+        color: #ff3030;
+        font-weight: 700;
+        font-size: 18px; }
+    .container-goodslist .goods-box .btn {
+      margin: 10px 10px 0;
+      display: block;
+      height: 34px;
+      border-radius: 2px;
+      background: #eb2f00;
+      color: #fff;
+      font-size: 15px;
+      line-height: 34px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer; }
